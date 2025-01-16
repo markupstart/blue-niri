@@ -61,7 +61,7 @@ virt-manager \
 virt-viewer \
 virt-v2v \
 ydotool \
-gdm
+lightdm
 
 #  COPR:
 #
