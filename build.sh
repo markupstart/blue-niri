@@ -22,16 +22,11 @@ pavucontrol \
 waybar \
 adobe-source-code-pro-fonts \			
 cascadia-code-fonts \
-code \
-containerd.io \
-dbus-x11 \
-docker-ce \
-docker-ce-cli \
-docker-buildx-plugin \
-docker-compose-plugin \
+docker-compose \
+docker-cli \
+podman-docker \
 edk2-ovmf \
 flatpak-builder \
-genisoimage \
 google-droid-sans-mono-fonts \			
 libvirt \
 libvirt-nss \				
@@ -39,7 +34,6 @@ mozilla-fira-mono-fonts \
 osbuild-selinux \
 p7zip-plugins \
 p7zip \
-podman-bootc \
 podman-compose \
 podman-machine \
 podman-tui \
@@ -56,12 +50,12 @@ qemu-user-static \
 qemu \
 rocm-hip \
 rocm-opencl \
-rocm-smi \				
-ubuntu-family-fonts \				
+rocm-smi \			
 virt-manager \
 virt-viewer \
 virt-v2v \
-ydotool
+ydotool \
+gdm
 
 #  COPR:
 #
