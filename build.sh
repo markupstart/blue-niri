@@ -68,7 +68,7 @@ virt-manager \
 virt-viewer \
 virt-v2v \
 ydotool \
-lightdm \
+ptyxis \
 chafa
 
 #  COPR:
@@ -96,7 +96,9 @@ bluefin-cli-logos \
 bluefin-logos \
 ublue-bling \
 ublue-brew \
-ublue-motd
+ublue-motd \
+uupd
+
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable ublue-os/staging
 
