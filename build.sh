@@ -9,16 +9,43 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
-# this installs a package from fedora repos
-dnf install -y tmux 
+#  install packages from fedora repos
+dnf install -y darktable \
+nextcloud-client \
+fuzzel \
+lxpolkit \
+dunst \
+thunar \
+thunar-volman \
+thunar-media-tags-plugin \
+thunar-vcs-plugin \
+thunar-archive-plugin \
+tumbler \
+swaybg \
+swayidle \
+swaylock \
+pavucontrol \
+waybar
 
-# Use a COPR Example:
+#  COPR:
 #
-# dnf5 -y copr enable ublue-os/staging
-# dnf5 -y install package
+dnf5 -y copr enable enable yalter/niri
+dnf5 -y install niri
 # Disable COPRs so they don't end up enabled on the final image:
-# dnf5 -y copr disable ublue-os/staging
+dnf5 -y copr disable yalter/niri 
+
+dnf5 -y copr enable enableulysg/xwayland-satellite
+dnf5 -y install xwayland-satellite
+# Disable COPRs so they don't end up enabled on the final image:
+dnf5 -y copr disable ulysg/xwayland-satellite
+
+dnf5 -y copr enable enable celestelove/SwayOSD
+dnf5 -y install swayosd
+# Disable COPRs so they don't end up enabled on the final image:
+dnf5 -y copr disable celestelove/SwayOSD
+
+
 
 #### Example for enabling a System Unit File
 
-systemctl enable podman.socket
+#systemctl enable podman.socket
