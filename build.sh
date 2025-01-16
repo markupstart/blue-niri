@@ -69,6 +69,7 @@ virt-viewer \
 virt-v2v \
 ydotool \
 ptyxis \
+fastfetch \
 chafa
 
 #  COPR:
