@@ -19,7 +19,49 @@ swaybg \
 swayidle \
 swaylock \
 pavucontrol \
-waybar
+waybar \
+adobe-source-code-pro-fonts \			
+cascadia-code-fonts \
+code \
+containerd.io \
+dbus-x11 \
+docker-ce \
+docker-ce-cli \
+docker-buildx-plugin \
+docker-compose-plugin \
+edk2-ovmf \
+flatpak-builder \
+genisoimage \
+google-droid-sans-mono-fonts \			
+libvirt \
+libvirt-nss \				
+mozilla-fira-mono-fonts \
+osbuild-selinux \
+p7zip-plugins \
+p7zip \
+podman-bootc \
+podman-compose \
+podman-machine \
+podman-tui \
+podmansh \
+powerline-fonts \
+qemu-char-spice \
+qemu-device-display-virtio-gpu \
+qemu-device-display-virtio-vga \
+qemu-device-usb-redirect \
+qemu-img \
+qemu-system-x86-core \
+qemu-user-binfmt \
+qemu-user-static \
+qemu \
+rocm-hip \
+rocm-opencl \
+rocm-smi \				
+ubuntu-family-fonts \				
+virt-manager \
+virt-viewer \
+virt-v2v \
+ydotool
 
 #  COPR:
 #
