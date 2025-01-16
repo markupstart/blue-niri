@@ -20,10 +20,16 @@ swayidle \
 swaylock \
 pavucontrol \
 waybar \
+thunar \
+thunar-volman \
+thunar-media-tags-plugin \
+thunar-vcs-plugin \
+thunar-archive-plugin \
+engrampa \
+tumbler \
 adobe-source-code-pro-fonts \
 cascadia-code-fonts \
 docker-compose \
-docker-cli \
 podman-docker \
 edk2-ovmf \
 flatpak-builder \
