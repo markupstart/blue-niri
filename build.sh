@@ -14,6 +14,7 @@ dnf install -y darktable \
 nextcloud-client \
 fuzzel \
 lxpolkit \
+mate-polkit \
 dunst \
 swaybg \
 swayidle \
