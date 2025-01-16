@@ -55,7 +55,7 @@ virt-manager \
 virt-viewer \
 virt-v2v \
 ydotool \
-gdm
+distrobox
 
 #  COPR:
 #
