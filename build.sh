@@ -64,8 +64,7 @@ qemu \
 rocm-hip \
 rocm-opencl \
 rocm-smi \
-virt-manager \
-virt-viewer \
+virt-install \
 virt-v2v \
 ydotool \
 ptyxis \
