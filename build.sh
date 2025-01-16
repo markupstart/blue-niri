@@ -52,6 +52,7 @@ podman-machine \
 podman-tui \
 podmansh \
 powerline-fonts \
+qemu \
 qemu-char-spice \
 qemu-device-display-virtio-gpu \
 qemu-device-display-virtio-vga \
