@@ -50,7 +50,7 @@ qemu-user-static \
 qemu \
 rocm-hip \
 rocm-opencl \
-rocm-smi \	
+rocm-smi \
 virt-manager \
 virt-viewer \
 virt-v2v \
