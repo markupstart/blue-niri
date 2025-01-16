@@ -27,7 +27,7 @@ docker-cli \
 podman-docker \
 edk2-ovmf \
 flatpak-builder \
-google-droid-sans-mono-fonts \		
+google-droid-sans-mono-fonts \
 libvirt \
 libvirt-nss \
 mozilla-fira-mono-fonts \
@@ -55,7 +55,7 @@ virt-manager \
 virt-viewer \
 virt-v2v \
 ydotool \
-distrobox
+gdm
 
 #  COPR:
 #
