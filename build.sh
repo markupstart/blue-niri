@@ -15,12 +15,6 @@ nextcloud-client \
 fuzzel \
 lxpolkit \
 dunst \
-thunar \
-thunar-volman \
-thunar-media-tags-plugin \
-thunar-vcs-plugin \
-thunar-archive-plugin \
-tumbler \
 swaybg \
 swayidle \
 swaylock \
