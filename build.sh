@@ -89,7 +89,11 @@ dnf5 -y install swayosd
 dnf5 -y copr disable celestelove/SwayOSD
 
 dnf5 -y copr enable ublue-os/staging
-dnf5 -y install bluefin \
+dnf5 -y install bluefin-backgrounds \
+bluefin-plymouth \
+bluefin-faces \
+bluefin-cli-logos \
+bluefin-logos \
 ublue-bling \
 ublue-brew \
 ublue-motd
