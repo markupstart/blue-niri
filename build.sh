@@ -25,6 +25,12 @@ thunar-volman \
 thunar-media-tags-plugin \
 thunar-vcs-plugin \
 thunar-archive-plugin \
+gvfs-fuse \
+gvfs-nfs \
+gvfs-smb \
+gvfs-gphoto2 \
+gvfs-goa \
+gvfs-afp \
 engrampa \
 tumbler \
 adobe-source-code-pro-fonts \
@@ -37,6 +43,7 @@ google-droid-sans-mono-fonts \
 libvirt \
 libvirt-nss \
 mozilla-fira-mono-fonts \
+google-noto-emoji-fonts \
 osbuild-selinux \
 p7zip-plugins \
 p7zip \
@@ -61,7 +68,8 @@ virt-manager \
 virt-viewer \
 virt-v2v \
 ydotool \
-lightdm
+lightdm \
+chafa
 
 #  COPR:
 #
@@ -80,7 +88,18 @@ dnf5 -y install swayosd
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable celestelove/SwayOSD
 
+dnf5 -y copr enable ublue-os/staging
+dnf5 -y install bluefin \
+ublue-bling \
+ublue-brew \
+ublue-motd
+# Disable COPRs so they don't end up enabled on the final image:
+dnf5 -y copr disable ublue-os/staging
 
+dnf5 -y copr enable medzik/vscode
+dnf5 -y install code-oss
+# Disable COPRs so they don't end up enabled on the final image:
+dnf5 -y copr disable medzik/vscode
 
 #### Example for enabling a System Unit File
 
