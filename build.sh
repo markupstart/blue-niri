@@ -29,17 +29,17 @@ waybar
 
 #  COPR:
 #
-dnf5 -y copr enable enable yalter/niri
+dnf5 -y copr enable yalter/niri
 dnf5 -y install niri
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable yalter/niri 
 
-dnf5 -y copr enable enableulysg/xwayland-satellite
+dnf5 -y copr enable ulysg/xwayland-satellite
 dnf5 -y install xwayland-satellite
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable ulysg/xwayland-satellite
 
-dnf5 -y copr enable enable celestelove/SwayOSD
+dnf5 -y copr enable celestelove/SwayOSD
 dnf5 -y install swayosd
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable celestelove/SwayOSD
