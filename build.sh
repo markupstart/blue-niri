@@ -41,7 +41,6 @@ edk2-ovmf \
 flatpak-builder \
 google-droid-sans-mono-fonts \
 libvirt \
-libvirt-nss \
 mozilla-fira-mono-fonts \
 google-noto-emoji-fonts \
 osbuild-selinux \
@@ -52,15 +51,6 @@ podman-machine \
 podman-tui \
 podmansh \
 powerline-fonts \
-qemu \
-qemu-char-spice \
-qemu-device-display-virtio-gpu \
-qemu-device-display-virtio-vga \
-qemu-device-usb-redirect \
-qemu-img \
-qemu-system-x86-core \
-qemu-user-binfmt \
-qemu-user-static \
 qemu \
 rocm-hip \
 rocm-opencl \
