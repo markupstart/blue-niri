@@ -104,14 +104,8 @@ ublue-bling \
 ublue-brew \
 ublue-motd \
 uupd
-
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable ublue-os/staging
-
-dnf5 -y copr enable medzik/vscode
-dnf5 -y install code-oss
-# Disable COPRs so they don't end up enabled on the final image:
-dnf5 -y copr disable medzik/vscode
 
 #### Example for enabling a System Unit File
 
