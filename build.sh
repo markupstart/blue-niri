@@ -64,7 +64,8 @@ chafa \
 greetd \
 xdg-desktop-portal-gtk \
 xdg-desktop-portal-gnome \
-tuigreet
+tuigreet \
+code
 
 #  COPR:
 #
