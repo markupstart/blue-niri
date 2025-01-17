@@ -61,7 +61,8 @@ ydotool \
 ptyxis \
 fastfetch \
 chafa \
-greetd
+greetd \
+firefox
 
 #  COPR:
 #
