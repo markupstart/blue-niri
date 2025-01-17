@@ -62,7 +62,8 @@ ptyxis \
 fastfetch \
 chafa \
 greetd \
-firefox
+xdg-desktop-portal-gtk \
+xdg-desktop-portal-gnome
 
 #  COPR:
 #
