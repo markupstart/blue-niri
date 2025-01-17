@@ -60,7 +60,8 @@ virt-v2v \
 ydotool \
 ptyxis \
 fastfetch \
-chafa
+chafa \
+greetd
 
 #  COPR:
 #
