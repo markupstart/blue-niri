@@ -118,4 +118,6 @@ systemctl enable greetd
 
 #disable vscode repo, so it's not enabled on the final system
 sed -i 's@enabled=1@enabled=0@g' "/etc/yum.repos.d/vscode.repo"
+
+#change pretty name
 sed -i "s|^PRETTY_NAME=.*|PRETTY_NAME=\"blue-niri $(rpm -E %fedora) (FROM Fedora Linux 41)\"|" /usr/lib/os-release
