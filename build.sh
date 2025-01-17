@@ -107,6 +107,11 @@ uupd
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable ublue-os/staging
 
+dnf5 -y copr enable che/nerd-fonts
+dnf5 -y install nerd-fonts
+# Disable COPRs so they don't end up enabled on the final image:
+dnf5 -y copr disable che/nerd-fonts
+
 #### Example for enabling a System Unit File
 
 systemctl enable greetd
