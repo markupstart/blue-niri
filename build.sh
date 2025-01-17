@@ -110,3 +110,6 @@ dnf5 -y copr disable ublue-os/staging
 #### Example for enabling a System Unit File
 
 systemctl enable greetd
+
+#disable vscode repo, so it's not enabled on the final system
+sed -i 's@enabled=1@enabled=0@g' "/etc/yum.repos.d/vscode.repo"
