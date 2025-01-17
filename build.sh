@@ -63,7 +63,8 @@ fastfetch \
 chafa \
 greetd \
 xdg-desktop-portal-gtk \
-xdg-desktop-portal-gnome
+xdg-desktop-portal-gnome \
+gtkgreet
 
 #  COPR:
 #
