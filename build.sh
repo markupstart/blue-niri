@@ -79,31 +79,25 @@ code
 
 #  COPR:
 #
-dnf5 -y copr enable yalter/niri
-dnf5 -y install niri
-# Disable COPRs so they don't end up enabled on the final image:
-dnf5 -y copr disable yalter/niri 
+dnf config-manager --add-repo "https://copr.fedorainfracloud.org/coprs/yalter/niri-git/repo/fedora-${MAJOR_VERSION}/yalter-niri-git-${MAJOR_VERSION}.repo"
+dnf config-manager --set-disabled copr:copr.fedorainfracloud.org:yalter:niri-git
+dnf -y --enablerepo copr:copr.fedorainfracloud.org:yalter:niri-git install \
+	niri
+dnf config-manager --add-repo "https://copr.fedorainfracloud.org/coprs/ulysg/xwayland-satellite/repo/fedora-${MAJOR_VERSION}/ulysg-xwayland-satellite-${MAJOR_VERSION}.repo"
+dnf config-manager --set-disabled copr:copr.fedorainfracloud.org:ulysg:xwayland-satellite
+dnf -y --enablerepo copr:copr.fedorainfracloud.org:ulysg:dnf -y --enablerepo copr:copr.fedorainfracloud.org:ulysg:xwayland-satellite install \
+	install \
+	xwayland-satellite
 
-dnf5 -y copr enable ulysg/xwayland-satellite
-dnf5 -y install xwayland-satellite
-# Disable COPRs so they don't end up enabled on the final image:
-dnf5 -y copr disable ulysg/xwayland-satellite
+dnf config-manager --add-repo "https://copr.fedorainfracloud.org/coprs/celestelove/SwayOSD/repo/fedora-${MAJOR_VERSION}/celestelove-SwayOSD-${MAJOR_VERSION}.repo"
+dnf config-manager --set-disabled copr:copr.fedorainfracloud.org:celestelove:SwayOSD
+dnf -y --enablerepo copr:copr.fedorainfracloud.org:celestelove:SwayOSD install \
+swayosd
 
-dnf5 -y copr enable celestelove/SwayOSD
-dnf5 -y install swayosd
-# Disable COPRs so they don't end up enabled on the final image:
-dnf5 -y copr disable celestelove/SwayOSD
-
-dnf5 -y copr enable ublue-os/staging
-dnf5 -y install uupd
-
-# Disable COPRs so they don't end up enabled on the final image:
-dnf5 -y copr disable ublue-os/staging
-
-dnf5 -y copr enable che/nerd-fonts
-dnf5 -y install nerd-fonts
-# Disable COPRs so they don't end up enabled on the final image:
-dnf5 -y copr disable che/nerd-fonts
+dnf config-manager --add-repo "https://copr.fedorainfracloud.org/coprs/che/nerd-fonts/repo/fedora-${MAJOR_VERSION}/che-nerd-fonts-${MAJOR_VERSION}.repo"
+dnf config-manager --set-disabled copr:copr.fedorainfracloud.org:che:nerd-fonts
+dnf -y --enablerepo copr:copr.fedorainfracloud.org:che:nerd-fonts install \
+nerd-fonts
 
 #### Example for enabling a System Unit File
 
