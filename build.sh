@@ -79,22 +79,22 @@ code
 
 #  COPR:
 #
-dnf config-manager --add-repo "https://copr.fedorainfracloud.org/coprs/yalter/niri-git/repo/fedora-${MAJOR_VERSION}/yalter-niri-git-${MAJOR_VERSION}.repo"
+dnf config-manager --add-repo "https://copr.fedorainfracloud.org/coprs/yalter/niri-git/repo/fedora-41/yalter-niri-git-41.repo"
 dnf config-manager --set-disabled copr:copr.fedorainfracloud.org:yalter:niri-git
 dnf -y --enablerepo copr:copr.fedorainfracloud.org:yalter:niri-git install \
 	niri
-dnf config-manager --add-repo "https://copr.fedorainfracloud.org/coprs/ulysg/xwayland-satellite/repo/fedora-${MAJOR_VERSION}/ulysg-xwayland-satellite-${MAJOR_VERSION}.repo"
+dnf config-manager --add-repo "https://copr.fedorainfracloud.org/coprs/ulysg/xwayland-satellite/repo/fedora-41/ulysg-xwayland-satellite-4.repo"
 dnf config-manager --set-disabled copr:copr.fedorainfracloud.org:ulysg:xwayland-satellite
 dnf -y --enablerepo copr:copr.fedorainfracloud.org:ulysg:dnf -y --enablerepo copr:copr.fedorainfracloud.org:ulysg:xwayland-satellite install \
 	install \
 	xwayland-satellite
 
-dnf config-manager --add-repo "https://copr.fedorainfracloud.org/coprs/celestelove/SwayOSD/repo/fedora-${MAJOR_VERSION}/celestelove-SwayOSD-${MAJOR_VERSION}.repo"
+dnf config-manager --add-repo "https://copr.fedorainfracloud.org/coprs/celestelove/SwayOSD/repo/fedora-41/celestelove-SwayOSD-41.repo"
 dnf config-manager --set-disabled copr:copr.fedorainfracloud.org:celestelove:SwayOSD
 dnf -y --enablerepo copr:copr.fedorainfracloud.org:celestelove:SwayOSD install \
 swayosd
 
-dnf config-manager --add-repo "https://copr.fedorainfracloud.org/coprs/che/nerd-fonts/repo/fedora-${MAJOR_VERSION}/che-nerd-fonts-${MAJOR_VERSION}.repo"
+dnf config-manager --add-repo "https://copr.fedorainfracloud.org/coprs/che/nerd-fonts/repo/fedora-41/che-nerd-fonts-41.repo"
 dnf config-manager --set-disabled copr:copr.fedorainfracloud.org:che:nerd-fonts
 dnf -y --enablerepo copr:copr.fedorainfracloud.org:che:nerd-fonts install \
 nerd-fonts
