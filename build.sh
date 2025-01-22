@@ -68,6 +68,7 @@ rocm-opencl \
 rocm-smi \
 virt-install \
 virt-v2v \
+virt-manager \
 ydotool \
 ptyxis \
 fastfetch \
