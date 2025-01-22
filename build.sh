@@ -172,5 +172,8 @@ dnf5 -y copr disable markupstart/ghostty
 #### Example for enabling a System Unit File
 systemctl enable greetd
 
+#change pretty name
+sed -i "s|^PRETTY_NAME=.*|PRETTY_NAME=\"blue-niri $(rpm -E %fedora) (FROM Fedora Linux 41)\"|" /usr/lib/os-release
+
 #disable vscode repo, so it's not enabled on the final system
 sed -i 's@enabled=1@enabled=0@g' "/etc/yum.repos.d/vscode.repo"
