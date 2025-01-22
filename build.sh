@@ -20,7 +20,8 @@ EOF
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 #  install packages from fedora repos
-dnf install -y darktable \
+dnf install -y dnf5 \
+darktable \
 nextcloud-client \
 fuzzel \
 mate-polkit \
