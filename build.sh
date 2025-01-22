@@ -76,7 +76,51 @@ greetd \
 xdg-desktop-portal-gtk \
 xdg-desktop-portal-gnome \
 tuigreet \
-code
+code \
+just \
+firefox \
+eza \
+fedora-repos-ostree \
+gamemode \
+ghostscript \
+glibc-all-langpacks \
+gnome-boxes \
+google-noto-color-emoji-fonts \
+google-noto-emoji-fonts \
+google-noto-sans-cjk-fonts \
+grub2-efi-ia32 \
+grub2-tools-extra \
+htop \
+btop \
+langpacks-core-en \
+langpacks-en \
+langpacks-fonts-en \
+langtable \
+zoxide \
+xcb-util-cursor \
+xcb-util \
+xorg-x11-server-Xwayland \
+xdg-user-dirs \
+xdg-utils \
+pipewire-utils \
+zram-generator-defaults \
+zip \
+wl-clipboard \
+wget2 \
+nano \
+samba-client \
+plymouth \
+plymouth-system-theme \
+plymouth-theme-spinner \
+ostree-grub2 \
+ristretto \
+cups \
+cups-filters \
+cups-browsed \
+mousepad \
+NetworkManager \
+dhcp-client \
+ghostscript
 
 #  COPR:
 #
@@ -85,19 +129,18 @@ dnf5 -y install niri
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable yalter/niri 
 
-dnf5 -y copr enable ulysg/xwayland-satellite
+dnf5 -y copr enable markupstart/xwayland-satellite
 dnf5 -y install xwayland-satellite
 # Disable COPRs so they don't end up enabled on the final image:
-dnf5 -y copr disable ulysg/xwayland-satellite
+dnf5 -y copr disable markupstart/xwayland-satellite
 
-dnf5 -y copr enable celestelove/SwayOSD
+dnf5 -y copr enable markupstart/SwayOSD
 dnf5 -y install swayosd
 # Disable COPRs so they don't end up enabled on the final image:
-dnf5 -y copr disable celestelove/SwayOSD
+dnf5 -y copr disable markupstart/SwayOSD
 
 dnf5 -y copr enable ublue-os/staging
 dnf5 -y install uupd
-
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable ublue-os/staging
 
@@ -106,8 +149,27 @@ dnf5 -y install nerd-fonts
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable che/nerd-fonts
 
-#### Example for enabling a System Unit File
+dnf5 -y copr enable markupstart/terminal-stuff
+dnf5 -y install atuin \
+starship \
+lazygit \
+topgrade
+# Disable COPRs so they don't end up enabled on the final image:
+dnf5 -y copr disable markupstart/terminal-stuff
 
+dnf5 -y copr enable markupstart/ghostty
+dnf5 -y install ghostty \
+ghostty-bash-completion \
+ghostty-bat-syntax \
+ghostty-docs \
+ghostty-fish-completion \
+ghostty-shell-integration \
+ghostty-terminfo \
+ghostty-themes
+# Disable COPRs so they don't end up enabled on the final image:
+dnf5 -y copr disable markupstart/ghostty
+
+#### Example for enabling a System Unit File
 systemctl enable greetd
 
 #disable vscode repo, so it's not enabled on the final system
