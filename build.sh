@@ -20,7 +20,7 @@ EOF
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 #  install packages from fedora repos
-dnf install -y dnf5 \
+dnf install -y dnf5-plugins \
 darktable \
 nextcloud-client \
 fuzzel \
