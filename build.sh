@@ -121,7 +121,9 @@ cups-browsed \
 mousepad \
 NetworkManager \
 dhcp-client \
-ghostscript
+ghostscript \
+yambar \
+nwg-panel
 
 #  COPR:
 #
