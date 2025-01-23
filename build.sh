@@ -46,7 +46,6 @@ adobe-source-code-pro-fonts \
 cascadia-code-fonts \
 docker-compose \
 docker-cli \
-docker-switch \
 containerd \
 edk2-ovmf \
 flatpak-builder \
