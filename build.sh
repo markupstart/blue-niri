@@ -45,7 +45,9 @@ tumbler \
 adobe-source-code-pro-fonts \
 cascadia-code-fonts \
 docker-compose \
-podman-docker \
+docker-cli \
+docker-switch \
+containerd \
 edk2-ovmf \
 flatpak-builder \
 google-droid-sans-mono-fonts \
