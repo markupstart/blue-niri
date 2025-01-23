@@ -23,14 +23,12 @@ EOF
 dnf install -y dnf5-plugins \
 darktable \
 nextcloud-client \
-fuzzel \
 mate-polkit \
 dunst \
 swaybg \
 swayidle \
 swaylock \
 pavucontrol \
-waybar \
 thunar \
 thunar-volman \
 thunar-media-tags-plugin \
@@ -121,12 +119,7 @@ cups-browsed \
 mousepad \
 NetworkManager \
 dhcp-client \
-ghostscript \
-yambar \
-nwg-panel \
-nwg-launchers \
-nwg-drawer \
-nwg-bar
+ghostscript
 
 #  COPR:
 #
@@ -162,11 +155,6 @@ lazygit \
 topgrade
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable markupstart/terminal-stuff
-
-dnf5 -y copr enable markupstart/nwg-shell
-dnf5 -y install nwg-menu
-# Disable COPRs so they don't end up enabled on the final image:
-dnf5 -y copr disable markupstart/nwg-shell
 
 dnf5 -y copr enable markupstart/ghostty
 dnf5 -y install ghostty \
