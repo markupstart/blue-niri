@@ -24,7 +24,7 @@ dnf install -y dnf5-plugins \
 darktable \
 nextcloud-client \
 mate-polkit \
-dunst \
+mako \
 swaybg \
 swayidle \
 swaylock \
