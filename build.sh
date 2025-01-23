@@ -124,7 +124,9 @@ dhcp-client \
 ghostscript \
 yambar \
 nwg-panel \
-nwg-launchers
+nwg-launchers \
+nwg-drawer \
+nwg-bar
 
 #  COPR:
 #
