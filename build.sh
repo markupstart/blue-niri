@@ -123,7 +123,8 @@ NetworkManager \
 dhcp-client \
 ghostscript \
 yambar \
-nwg-panel
+nwg-panel \
+nwg-launchers
 
 #  COPR:
 #
