@@ -172,6 +172,7 @@ dnf5 -y copr disable markupstart/ghostty
 #### Example for enabling a System Unit File
 systemctl enable greetd
 systemctl enable uupd.timer
+systemctl mask bootc-fetch-apply-updates.timer bootc-fetch-apply-updates.service
 
 #change pretty name
 sed -i "s|^PRETTY_NAME=.*|PRETTY_NAME=\"blue-niri (FROM Fedora Linux $(rpm -E %fedora))\"|" /usr/lib/os-release
