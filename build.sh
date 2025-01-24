@@ -153,7 +153,6 @@ dnf5 -y copr enable markupstart/terminal-stuff
 dnf5 -y install atuin \
 starship \
 lazygit \
-topgrade
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable markupstart/terminal-stuff
 
