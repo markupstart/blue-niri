@@ -25,6 +25,7 @@ darktable \
 nextcloud-client \
 mate-polkit \
 mako \
+waybar \
 swaybg \
 swayidle \
 swaylock \
