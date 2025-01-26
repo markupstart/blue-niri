@@ -21,7 +21,6 @@ EOF
 
 #  install packages from fedora repos
 dnf install -y dnf5-plugins \
-darktable \
 nextcloud-client \
 mate-polkit \
 mako \
@@ -63,9 +62,6 @@ podman-tui \
 podmansh \
 powerline-fonts \
 qemu \
-rocm-hip \
-rocm-opencl \
-rocm-smi \
 virt-install \
 virt-v2v \
 virt-manager \
