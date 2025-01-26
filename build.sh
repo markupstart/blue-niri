@@ -159,8 +159,9 @@ mkdir -p /var/roothome
 # Brew Install Script
 curl --retry 3 -Lo /tmp/brew-install https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
 
-#cleanup
-rm /.dockerenv
 chmod +x /tmp/brew-install
 /tmp/brew-install
 tar --zstd -cvf /usr/share/homebrew.tar.zst /home/linuxbrew/.linuxbrew
+
+#cleanup
+rm /.dockerenv
