@@ -138,7 +138,6 @@ ublue-brew
 dnf5 -y copr disable ublue-os/staging
 
 #### Example for enabling a System Unit File
-systemctl enable greetd
 systemctl enable uupd.timer
 systemctl mask bootc-fetch-apply-updates.timer bootc-fetch-apply-updates.service
 systemctl enable brew-setup.service
