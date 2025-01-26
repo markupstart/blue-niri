@@ -22,6 +22,7 @@ EOF
 #  install packages from fedora repos
 dnf install -y dnf5-plugins \
 nextcloud-client \
+fish \
 mate-polkit \
 mako \
 waybar \
