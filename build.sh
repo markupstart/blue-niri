@@ -42,7 +42,6 @@ gvfs-goa \
 gvfs-afp \
 engrampa \
 tumbler \
-adobe-source-code-pro-fonts \
 cascadia-code-fonts \
 docker-compose \
 docker-cli \
@@ -76,7 +75,6 @@ tuigreet \
 code \
 just \
 firefox \
-eza \
 fedora-repos-ostree \
 gamemode \
 ghostscript \
@@ -104,7 +102,6 @@ zram-generator-defaults \
 zip \
 wl-clipboard \
 wget2 \
-nano \
 samba-client \
 plymouth \
 plymouth-system-theme \
