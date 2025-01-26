@@ -86,13 +86,10 @@ google-noto-emoji-fonts \
 google-noto-sans-cjk-fonts \
 grub2-efi-ia32 \
 grub2-tools-extra \
-htop \
-btop \
 langpacks-core-en \
 langpacks-en \
 langpacks-fonts-en \
 langtable \
-zoxide \
 xcb-util-cursor \
 xcb-util \
 xorg-x11-server-Xwayland \
@@ -139,13 +136,6 @@ dnf5 -y install uupd \
 ublue-brew
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable ublue-os/staging
-
-dnf5 -y copr enable markupstart/terminal-stuff
-dnf5 -y install atuin \
-starship \
-lazygit \
-# Disable COPRs so they don't end up enabled on the final image:
-dnf5 -y copr disable markupstart/terminal-stuff
 
 #### Example for enabling a System Unit File
 systemctl enable greetd
