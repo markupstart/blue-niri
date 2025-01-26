@@ -145,18 +145,6 @@ lazygit \
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable markupstart/terminal-stuff
 
-dnf5 -y copr enable markupstart/ghostty
-dnf5 -y install ghostty \
-ghostty-bash-completion \
-ghostty-bat-syntax \
-ghostty-docs \
-ghostty-fish-completion \
-ghostty-shell-integration \
-ghostty-terminfo \
-ghostty-themes
-# Disable COPRs so they don't end up enabled on the final image:
-dnf5 -y copr disable markupstart/ghostty
-
 #### Example for enabling a System Unit File
 systemctl enable greetd
 systemctl enable uupd.timer
