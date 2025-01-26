@@ -159,13 +159,15 @@ sed -i "s|^PRETTY_NAME=.*|PRETTY_NAME=\"blue-niri (FROM Fedora Linux $(rpm -E %f
 #disable vscode repo, so it's not enabled on the final system
 sed -i 's@enabled=1@enabled=0@g' "/etc/yum.repos.d/vscode.repo"
 
-# Homebrew
+# Convince the installer we are in CI
 touch /.dockerenv
+
+# Make these so script will work
+mkdir -p /var/home
+mkdir -p /var/roothome
+
+# Brew Install Script
 curl --retry 3 -Lo /tmp/brew-install https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
 chmod +x /tmp/brew-install
 /tmp/brew-install
-tar --zstd -cvf /usr/share/homebrew.tar.zst /home/linuxbrew
-rm -f /.dockerenv
-# Clean up brew artifacts on the image.
-rm -rf /home/linuxbrew /root/.cache
-rm -r /var/home
+tar --zstd -cvf /usr/share/homebrew.tar.zst /home/linuxbrew/.linuxbrew
