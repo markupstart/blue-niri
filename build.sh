@@ -135,7 +135,8 @@ dnf5 -y install swayosd
 dnf5 -y copr disable markupstart/SwayOSD
 
 dnf5 -y copr enable ublue-os/staging
-dnf5 -y install uupd
+dnf5 -y install uupd \
+ublue-brew
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable ublue-os/staging
 
@@ -150,9 +151,21 @@ dnf5 -y copr disable markupstart/terminal-stuff
 systemctl enable greetd
 systemctl enable uupd.timer
 systemctl mask bootc-fetch-apply-updates.timer bootc-fetch-apply-updates.service
+systemctl enable brew-setup.service
 
 #change pretty name
 sed -i "s|^PRETTY_NAME=.*|PRETTY_NAME=\"blue-niri (FROM Fedora Linux $(rpm -E %fedora))\"|" /usr/lib/os-release
 
 #disable vscode repo, so it's not enabled on the final system
 sed -i 's@enabled=1@enabled=0@g' "/etc/yum.repos.d/vscode.repo"
+
+# Homebrew
+touch /.dockerenv
+curl --retry 3 -Lo /tmp/brew-install https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+chmod +x /tmp/brew-install
+/tmp/brew-install
+tar --zstd -cvf /usr/share/homebrew.tar.zst /home/linuxbrew
+rm -f /.dockerenv
+# Clean up brew artifacts on the image.
+rm -rf /home/linuxbrew /root/.cache
+rm -r /var/home
