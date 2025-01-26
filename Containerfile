@@ -1,4 +1,4 @@
-FROM quay.io/fedora/fedora-bootc:41
+FROM quay.io/fedora/fedora-bootc:rawhide
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:stable
