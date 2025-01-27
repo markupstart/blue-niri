@@ -23,26 +23,6 @@ EOF
 dnf install -y dnf5-plugins \
 nextcloud-client \
 fish \
-mate-polkit \
-mako \
-waybar \
-swaybg \
-swayidle \
-swaylock \
-pavucontrol \
-thunar \
-thunar-volman \
-thunar-media-tags-plugin \
-thunar-vcs-plugin \
-thunar-archive-plugin \
-gvfs-fuse \
-gvfs-nfs \
-gvfs-smb \
-gvfs-gphoto2 \
-gvfs-goa \
-gvfs-afp \
-engrampa \
-tumbler \
 cascadia-code-fonts \
 docker-compose \
 docker-cli \
@@ -66,13 +46,8 @@ virt-install \
 virt-v2v \
 virt-manager \
 ydotool \
-ptyxis \
 fastfetch \
 chafa \
-greetd \
-xdg-desktop-portal-gtk \
-xdg-desktop-portal-gnome \
-tuigreet \
 code \
 just \
 firefox \
@@ -112,28 +87,52 @@ cups-browsed \
 mousepad \
 NetworkManager \
 dhcp-client \
-ghostscript
+ghostscript \
+#add stuff needed to run niri, not needed if using another desktop environment
+mate-polkit \
+mako \
+waybar \
+swaybg \
+swayidle \
+swaylock \
+pavucontrol \
+thunar \
+thunar-volman \
+thunar-media-tags-plugin \
+thunar-vcs-plugin \
+thunar-archive-plugin \
+gvfs-fuse \
+gvfs-nfs \
+gvfs-smb \
+gvfs-gphoto2 \
+gvfs-goa \
+gvfs-afp \
+engrampa \
+tumbler \
+xdg-desktop-portal-gtk \
+xdg-desktop-portal-gnome \
+ptyxis
 
 #testing GNOME Desktop adding thru dnf5
 dnf5 -y install @gnome-desktop
 
 #  COPR:
-#
+#niri
 dnf5 -y copr enable yalter/niri
 dnf5 -y install niri
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable yalter/niri 
-
+#for niri
 dnf5 -y copr enable markupstart/xwayland-satellite
 dnf5 -y install xwayland-satellite
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable markupstart/xwayland-satellite
-
+#for niri
 dnf5 -y copr enable markupstart/SwayOSD
 dnf5 -y install swayosd
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable markupstart/SwayOSD
-
+#updates
 dnf5 -y copr enable ublue-os/staging
 dnf5 -y install uupd \
 ublue-brew
