@@ -88,7 +88,6 @@ mousepad \
 NetworkManager \
 dhcp-client \
 ghostscript \
-#add stuff needed to run niri, not needed if using another desktop environment
 mate-polkit \
 mako \
 waybar \
