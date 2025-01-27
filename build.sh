@@ -113,7 +113,7 @@ xdg-desktop-portal-gnome \
 ptyxis
 
 #testing GNOME Desktop adding thru dnf5
-dnf5 -y install @gnome-desktop
+dnf5 -y install gdm --setopt=install_weak_deps=False
 
 #  COPR:
 #niri
