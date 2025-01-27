@@ -114,6 +114,9 @@ NetworkManager \
 dhcp-client \
 ghostscript
 
+#testing GNOME Desktop adding thru dnf5
+dnf5 -y install @gnome-desktop
+
 #  COPR:
 #
 dnf5 -y copr enable yalter/niri
