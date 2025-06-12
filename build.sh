@@ -62,6 +62,7 @@ gamemode \
 ghostscript \
 glibc-all-langpacks \
 gnome-boxes \
+mangohud \
 google-noto-color-emoji-fonts \
 google-noto-emoji-fonts \
 google-noto-sans-cjk-fonts \
