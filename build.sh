@@ -22,6 +22,10 @@ EOF
 #  install packages from fedora repos
 dnf install -y dnf5-plugins \
 nextcloud-client \
+btop \
+htop \
+flatpak \
+micro \
 fish \
 cascadia-code-fonts \
 wofi \
