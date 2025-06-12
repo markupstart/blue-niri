@@ -144,9 +144,9 @@ dnf5 -y install ghostty
 dnf5 -y copr disable xeriab/ghostty
 
 #wine
-dnf5 config-manager addrepo --from-repofile=https://dl.winehq.org/wine-builds/fedora/42/winehq.repo
+dnf5 config-manager addrepo --from-repofile=https://dl.winehq.org/wine-builds/fedora/42/winehq.repo 
 dnf5 -y install winehq-devel \
-winetricks
+winetricks --allowerasing 
  
 #### Example for enabling a System Unit File
 
