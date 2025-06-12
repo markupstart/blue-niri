@@ -131,17 +131,8 @@ dnf5 -y copr enable markupstart/SwayOSD
 dnf5 -y install swayosd
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable markupstart/SwayOSD
-#updates
-dnf5 -y copr enable ublue-os/staging
-dnf5 -y install uupd \
-ublue-brew
-# Disable COPRs so they don't end up enabled on the final image:
-dnf5 -y copr disable ublue-os/staging
 
 #### Example for enabling a System Unit File
-systemctl enable uupd.timer
-systemctl mask bootc-fetch-apply-updates.timer bootc-fetch-apply-updates.service
-systemctl enable brew-setup.service
 
 #change pretty name
 sed -i "s|^PRETTY_NAME=.*|PRETTY_NAME=\"blue-niri (FROM Fedora Linux $(rpm -E %fedora))\"|" /usr/lib/os-release
@@ -155,13 +146,6 @@ touch /.dockerenv
 # Make these so script will work
 mkdir -p /var/home
 mkdir -p /var/roothome
-
-# Brew Install Script
-curl --retry 3 -Lo /tmp/brew-install https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
-
-chmod +x /tmp/brew-install
-/tmp/brew-install
-tar --zstd -cvf /usr/share/homebrew.tar.zst /home/linuxbrew/.linuxbrew
 
 #cleanup
 rm /.dockerenv
