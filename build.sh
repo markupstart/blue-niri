@@ -147,7 +147,12 @@ dnf5 -y copr enable xeriab/ghostty
 dnf5 -y install ghostty
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable xeriab/ghostty
-
+#for starship
+dnf5 -y copr enable markupstart/terminal-stuff
+dnf5 -y install starship \
+topgrade
+# Disable COPRs so they don't end up enabled on the final image:
+dnf5 -y copr disable markupstart/terminal-stuff
 # use negativo17 for 3rd party packages with higher priority than default
 if ! grep -q fedora-multimedia <(dnf5 repolist); then
     # Enable or Install Repofile
