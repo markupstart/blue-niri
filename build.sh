@@ -156,10 +156,6 @@ dnf5 config-manager setopt fedora-multimedia.priority=90
 # use override to replace mesa and others with less crippled versions
 OVERRIDES=(
     "libva"
-    "intel-gmmlib"
-    "intel-vpl-gpu-rt"
-    "intel-mediasdk"
-    "libva-intel-media-driver"
     "mesa-dri-drivers"
     "mesa-filesystem"
     "mesa-libEGL"
