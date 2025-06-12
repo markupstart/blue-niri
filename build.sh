@@ -52,6 +52,7 @@ rocm-clinfo \
 rocm-hip \
 rocm-opencl \
 rocm-device-libs \
+llvm \
 darktable \
 distrobox \
 podman \
