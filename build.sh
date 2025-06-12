@@ -24,6 +24,7 @@ dnf install -y dnf5-plugins \
 nextcloud-client \
 fish \
 cascadia-code-fonts \
+wofi \
 edk2-ovmf \
 google-droid-sans-mono-fonts \
 mozilla-fira-mono-fonts \
