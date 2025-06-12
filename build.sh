@@ -41,6 +41,11 @@ podman-machine \
 podman-tui \
 podmansh \
 powerline-fonts \
+zoxide \
+fish \
+atuin \
+copyq \
+swayimg \
 qemu \
 virt-install \
 virt-v2v \
@@ -126,6 +131,11 @@ dnf5 -y copr enable markupstart/xwayland-satellite
 dnf5 -y install xwayland-satellite
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable markupstart/xwayland-satellite
+#nwgshell
+dnf5 -y copr enable markupstart/nwg-shell
+dnf5 -y install nwg-look
+# Disable COPRs so they don't end up enabled on the final image:
+dnf5 -y copr disable markupstart/nwg-shell
 #for niri
 dnf5 -y copr enable markupstart/SwayOSD
 dnf5 -y install swayosd
