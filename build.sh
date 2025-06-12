@@ -177,6 +177,23 @@ sed -i "s|^PRETTY_NAME=.*|PRETTY_NAME=\"blue-niri (FROM Fedora Linux $(rpm -E %f
 sed -i 's@enabled=1@enabled=0@g' "/etc/yum.repos.d/vscode.repo"
 sed -i 's@enabled=1@enabled=0@g' "/etc/yum.repos.d/fedora-multimedia.repo"
 
+# Remove dnf5 versionlocks
+dnf5 versionlock clear
+
+# Cleanup
+# Remove tmp files and everything in dirs that make bootc unhappy
+rm -rf /tmp/* || true
+rm -rf /usr/etc
+rm -rf /boot && mkdir /boot
+
+shopt -s extglob
+rm -rf /var/!(cache)
+rm -rf /var/cache/!(libdnf5)
+
+# bootc/ostree checks
+bootc container lint
+ostree container commit
+
 # Convince the installer we are in CI
 touch /.dockerenv
 
