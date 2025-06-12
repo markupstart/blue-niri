@@ -111,7 +111,9 @@ engrampa \
 tumbler \
 xdg-desktop-portal-gtk \
 xdg-desktop-portal-gnome \
-ptyxis
+ptyxis \
+wine \
+winetricks
 
 #testing GNOME Desktop adding thru dnf5
 dnf5 -y install gdm --setopt=install_weak_deps=False
@@ -143,11 +145,6 @@ dnf5 -y install ghostty
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable xeriab/ghostty
 
-#wine
-dnf5 config-manager addrepo --from-repofile=https://dl.winehq.org/wine-builds/fedora/42/winehq.repo 
-dnf5 -y install winehq-devel \
-winetricks --allowerasing 
- 
 #### Example for enabling a System Unit File
 
 #change pretty name
