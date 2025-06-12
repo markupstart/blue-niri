@@ -118,6 +118,10 @@ tumbler \
 xdg-desktop-portal-gtk \
 xdg-desktop-portal-gnome \
 ptyxis \
+apr \
+apr-util \
+mesa-libGLU \
+libxcrypt-compat \
 wine \
 winetricks \
 curl \
