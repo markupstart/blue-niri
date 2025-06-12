@@ -113,7 +113,11 @@ xdg-desktop-portal-gtk \
 xdg-desktop-portal-gnome \
 ptyxis \
 wine \
-winetricks
+winetricks \
+curl \
+zenity \
+vulkan-tools \
+vulkan-loader
 
 #testing GNOME Desktop adding thru dnf5
 dnf5 -y install gdm --setopt=install_weak_deps=False
@@ -152,7 +156,6 @@ sed -i "s|^PRETTY_NAME=.*|PRETTY_NAME=\"blue-niri (FROM Fedora Linux $(rpm -E %f
 
 #disable vscode repo, so it's not enabled on the final system
 sed -i 's@enabled=1@enabled=0@g' "/etc/yum.repos.d/vscode.repo"
-sed -i 's@enabled=1@enabled=0@g' "/etc/yum.repos.d/winehq.repo"
 
 # Convince the installer we are in CI
 touch /.dockerenv
