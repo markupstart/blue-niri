@@ -66,7 +66,7 @@ dnf5 -y install cosmic-desktop
 dnf5 -y copr disable ryanabx/cosmic-epoch
  
 #change pretty name
-sed -i "s|^PRETTY_NAME=.*|PRETTY_NAME=\"blue-niri (FROM Fedora Linux $(rpm -E %fedora))\"|" /usr/lib/os-release
+sed -i "s|^PRETTY_NAME=.*|PRETTY_NAME=\"blue-niri (FROM bluefin-dx:latest)\"|" /usr/lib/os-release
 
 # Cleanup
 # Remove tmp files and everything in dirs that make bootc unhappy
