@@ -65,26 +65,3 @@ dnf5 -y copr disable alebastr/sway-extras
 #change pretty name
 sed -i "s|^PRETTY_NAME=.*|PRETTY_NAME=\"blue-niri (FROM bluefin-dx:latest)\"|" /usr/lib/os-release
 
-# Cleanup
-# Remove tmp files and everything in dirs that make bootc unhappy
-rm -rf /tmp/* || true
-rm -rf /usr/etc
-rm -rf /boot && mkdir /boot
-
-shopt -s extglob
-rm -rf /var/!(cache)
-rm -rf /var/cache/!(libdnf5)
-
-# bootc/ostree checks
-bootc container lint
-ostree container commit
-
-# Convince the installer we are in CI
-touch /.dockerenv
-
-# Make these so script will work
-mkdir -p /var/home
-mkdir -p /var/roothome
-
-#cleanup
-rm /.dockerenv
