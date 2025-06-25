@@ -54,10 +54,10 @@ dnf5 -y install ghostty
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable xeriab/ghostty
 #for swww
-dnf5 -y copr enable lebastr/sway-extras
+dnf5 -y copr enable alebastr/sway-extras
 dnf5 -y install swww
 # Disable COPRs so they don't end up enabled on the final image:
-dnf5 -y copr disable lebastr/sway-extras
+dnf5 -y copr disable alebastr/sway-extras
 
 #for cosmic desktop
 dnf5 -y copr enable ryanabx/cosmic-epoch
