@@ -31,6 +31,7 @@ waybar \
 cargo \
 pamixer \
 libreoffice \
+swayimg \
 
 #install cosmic desktop tagged releases
 dnf5 -y install @cosmic-desktop-environment
