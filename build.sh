@@ -32,18 +32,21 @@ cargo \
 pamixer \
 libreoffice \
 
+#install cosmic desktop tagged releases
+dnf5 -y install @cosmic-desktop-environment
+
 #  COPR:
 #niri
 dnf5 -y copr enable yalter/niri
 dnf5 -y install niri
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable yalter/niri 
-#nwgshell
+#nwg-look
 dnf5 -y copr enable markupstart/nwg-shell
 dnf5 -y install nwg-look
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable markupstart/nwg-shell
-#for niri
+#swayosd
 dnf5 -y copr enable markupstart/SwayOSD
 dnf5 -y install swayosd
 # Disable COPRs so they don't end up enabled on the final image:
@@ -58,12 +61,6 @@ dnf5 -y copr enable alebastr/sway-extras
 dnf5 -y install swww
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable alebastr/sway-extras
-
-#for cosmic desktop
-dnf5 -y copr enable ryanabx/cosmic-epoch
-dnf5 -y install cosmic-desktop
-# Disable COPRs so they don't end up enabled on the final image:
-dnf5 -y copr disable ryanabx/cosmic-epoch
  
 #change pretty name
 sed -i "s|^PRETTY_NAME=.*|PRETTY_NAME=\"blue-niri (FROM bluefin-dx:latest)\"|" /usr/lib/os-release
