@@ -1,4 +1,4 @@
-FROM quay.io/fedora/fedora-bootc:42
+FROM ghcr.io/ublue-os/bluefin-dx:latest
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:stable
