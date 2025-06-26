@@ -33,9 +33,6 @@ pamixer \
 libreoffice \
 swayimg \
 
-#install cosmic desktop tagged releases
-dnf5 -y install @cosmic-desktop-environment
-
 #  COPR:
 #niri
 dnf5 -y copr enable yalter/niri
