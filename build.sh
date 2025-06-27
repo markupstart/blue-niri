@@ -59,7 +59,11 @@ dnf5 -y copr enable alebastr/sway-extras
 dnf5 -y install swww
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable alebastr/sway-extras
- 
+#for bottom process monitor
+dnf5 -y copr enable atim/bottom
+dnf5 -y install bottom
+# Disable COPRs so they don't end up enabled on the final image:
+dnf5 -y copr disable atim/bottom
 #change pretty name
 sed -i "s|^PRETTY_NAME=.*|PRETTY_NAME=\"blue-niri (FROM bluefin-dx:latest)\"|" /usr/lib/os-release
 
