@@ -36,6 +36,7 @@ kitty \
 xwayland-satellite \
 xwayland-run \
 foot \
+libsixel \
 
 #  COPR:
 #niri
