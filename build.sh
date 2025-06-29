@@ -32,6 +32,7 @@ cargo \
 pamixer \
 libreoffice \
 swayimg \
+kitty \
 
 #  COPR:
 #niri
@@ -49,11 +50,6 @@ dnf5 -y copr enable markupstart/SwayOSD
 dnf5 -y install swayosd
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable markupstart/SwayOSD
-#for ghostty
-dnf5 -y copr enable xeriab/ghostty
-dnf5 -y install ghostty
-# Disable COPRs so they don't end up enabled on the final image:
-dnf5 -y copr disable xeriab/ghostty
 #for swww
 dnf5 -y copr enable alebastr/sway-extras
 dnf5 -y install swww
