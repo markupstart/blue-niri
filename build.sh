@@ -62,5 +62,5 @@ dnf5 -y install bottom
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable atim/bottom
 #change pretty name
-sed -i "s|^PRETTY_NAME=.*|PRETTY_NAME=\"blue-niri (FROM bluefin-dx:latest)\"|" /usr/lib/os-release
+sed -i "s|^PRETTY_NAME=.*|PRETTY_NAME=\"blue-niri\"|" /usr/lib/os-release
 
