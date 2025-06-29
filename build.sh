@@ -35,6 +35,7 @@ swayimg \
 kitty \
 xwayland-satellite \
 xwayland-run \
+foot \
 
 #  COPR:
 #niri
