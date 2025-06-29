@@ -34,6 +34,7 @@ libreoffice \
 swayimg \
 kitty \
 xwayland-satellite \
+xwayland-run \
 
 #  COPR:
 #niri
