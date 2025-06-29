@@ -33,6 +33,7 @@ pamixer \
 libreoffice \
 swayimg \
 kitty \
+xwayland-satellite \
 
 #  COPR:
 #niri
