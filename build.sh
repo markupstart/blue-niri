@@ -33,17 +33,15 @@ pamixer \
 libreoffice \
 swayimg \
 kitty \
-xwayland-satellite \
-xwayland-run \
 foot \
 libsixel \
 
 #  COPR:
 #niri
-dnf5 -y copr enable yalter/niri
+dnf5 -y copr enable yalter/niri-git
 dnf5 -y install niri
 # Disable COPRs so they don't end up enabled on the final image:
-dnf5 -y copr disable yalter/niri 
+dnf5 -y copr disable yalter/niri-git
 #nwg-look
 dnf5 -y copr enable markupstart/nwg-shell
 dnf5 -y install nwg-look
