@@ -39,6 +39,7 @@ libsixel \
 #  COPR:
 #niri
 dnf5 -y copr enable yalter/niri-git
+echo "priority=1" | sudo tee -a /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:yalter:niri-git.repo
 dnf5 -y install niri
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable yalter/niri-git
