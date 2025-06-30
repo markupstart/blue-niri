@@ -64,4 +64,5 @@ dnf5 -y install bottom
 dnf5 -y copr disable atim/bottom
 #change pretty name
 sed -i "s|^PRETTY_NAME=.*|PRETTY_NAME=\"blue-niri\"|" /usr/lib/os-release
+chmod +x /usr/bin/xwayland-satellite
 
