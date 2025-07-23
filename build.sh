@@ -23,7 +23,7 @@ printer-driver-brlaser \
 cups \
 cups-browsed \
 cups-filters \
-cup-pdf \
+cups-pdf \
 mate-polkit \
 mako \
 thunar \
