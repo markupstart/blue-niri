@@ -18,6 +18,12 @@ rocm-opencl \
 nextcloud-client \
 darktable \
 wofi \
+system-config-printer \
+printer-driver-brlaser \
+cups \
+cups-browsed \
+cups-filters \
+cup-pdf \
 mate-polkit \
 mako \
 thunar \
