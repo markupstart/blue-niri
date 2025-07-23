@@ -11,6 +11,10 @@ set -ouex pipefail
 
 #  install packages from fedora repos
 dnf install -y dnf5-plugins \
+rocminfo \
+rocm-hip \
+rocm-device-libs \
+rocm-opencl \
 nextcloud-client \
 darktable \
 wofi \
