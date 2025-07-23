@@ -18,6 +18,7 @@ rocm-opencl \
 nextcloud-client \
 darktable \
 wofi \
+inotify-tools \
 system-config-printer \
 printer-driver-brlaser \
 cups \
