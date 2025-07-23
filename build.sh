@@ -36,6 +36,7 @@ cargo \
 pamixer \
 libreoffice \
 swayimg \
+swappy \
 kitty \
 foot \
 libsixel \
