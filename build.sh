@@ -48,10 +48,14 @@ qt6-qtmultimedia \
 
 #  COPR:
 #ghostty
-dnf5 -y copr enable myriad-sun/ghostty
-dnf5 -y install ghostty 
+dnf5 -y copr enable avengemedia/danklinux
+dnf5 -y install ghostty \
+cliphist \
+dgop \
+danksearch \
+quickshell-git \
 # Disable COPRs so they don't end up enabled on the final image:
-dnf5 -y copr disable myriad-sun/ghostty
+dnf5 -y copr disable avengemedia/danklinux
 #dankmaterialshell
 dnf5 -y copr enable avengemedia/dms
 dnf5 -y install dms 
