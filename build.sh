@@ -41,7 +41,6 @@ foot \
 libsixel \
 xwayland-satellite \
 niri \
-matugen \
 cava \
 qt6ct \
 qt6-qtmultimedia
@@ -53,7 +52,8 @@ dnf5 -y install ghostty \
 cliphist \
 dgop \
 danksearch \
-quickshell-git
+quickshell-git \
+matugen
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable avengemedia/danklinux
 #dankmaterialshell
