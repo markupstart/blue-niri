@@ -44,7 +44,7 @@ niri \
 matugen \
 cava \
 qt6ct \
-qt6-qtmultimedia \
+qt6-qtmultimedia
 
 #  COPR:
 #ghostty
@@ -53,7 +53,7 @@ dnf5 -y install ghostty \
 cliphist \
 dgop \
 danksearch \
-quickshell-git \
+quickshell-git
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable avengemedia/danklinux
 #dankmaterialshell
