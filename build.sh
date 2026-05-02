@@ -61,11 +61,6 @@ dnf5 -y copr enable avengemedia/dms
 dnf5 -y install dms 
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable avengemedia/dms
-#nwg-look
-dnf5 -y copr enable markupstart/nwg-shell
-dnf5 -y install nwg-look
-# Disable COPRs so they don't end up enabled on the final image:
-dnf5 -y copr disable markupstart/nwg-shell
 #for bottom process monitor
 dnf5 -y copr enable atim/bottom
 dnf5 -y install bottom
