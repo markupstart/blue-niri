@@ -138,7 +138,7 @@ waypipe \
 vulkan-loader
 
 #gdm adding thru dnf5
-dnf5 -y install gdm --setopt=install_weak_deps=False
+dnf5 -y install @gnome-desktop --setopt=install_weak_deps=False
 
 #  COPR:
 #niri
