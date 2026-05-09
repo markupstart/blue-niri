@@ -152,8 +152,8 @@ dnf5 -y install nwg-look
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable markupstart/nwg-shell
 #for dank dms
-sudo dnf copr enable avengemedia/danklinux
-sudo dnf install ghostty \
+dnf5 -y copr enable avengemedia/danklinux
+dnf5 -y install ghostty \
 cliphist \
 dgop \
 danksearch \
