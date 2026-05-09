@@ -32,7 +32,6 @@ zsh-autosuggestions \
 cascadia-code-fonts \
 edk2-ovmf \
 google-droid-sans-mono-fonts \
-mozilla-fira-mono-fonts \
 google-noto-emoji-fonts \
 osbuild-selinux \
 make \
